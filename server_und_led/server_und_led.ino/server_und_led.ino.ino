@@ -1,16 +1,17 @@
 /*
- NodeMCU-BlinkendeD1
- D4 an dem Modul ESP8266 bzw. Board NodeMCU blinken lassen
- Programm erprobt ab Arduino IDE 1.6.13
- Weitere Beispiele unter https://www.mikrocontroller-elektronik.de/
+ * This project is mostly copy and pasted from:
+ 
+  https://www.mikrocontroller-elektronik.de/nodemcu-esp8266-tutorial-wlan-board-arduino-ide/
 
   Soft Acces Point Reference:
   https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/soft-access-point-class.html
-  
+
+  https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/WiFiWebServer/WiFiWebServer.ino
+
   WiFi.softAP(ssid=char*, password=char*, channel=int, hidden=bool);
   WiFi.softAPIP();
-
  */
+ 
 #include <ESP8266WiFi.h>
 
 char* ssid = "ESP";
